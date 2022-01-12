@@ -54,9 +54,9 @@ const fetchGender = async (req, res, next) => {
 
         client.hset(hashKey, uname, JSON.stringify(result.data));
 
-        //set the duration of cache.
+        //set the duration of cache 1 day.
 
-        client.expire(hashKey, 60);
+        client.expireat(hashKey, parseInt(+new Date() / 1000) + 86400);
 
         //send the response
 
