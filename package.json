@@ -14,10 +14,9 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "nodemon": "^2.0.7",
-    "redis": "^3.1.2"
+    "redis": "^3.1.2",
+    "dotenv": "^11.0.0"
   },
   "description": "",
-  "devDependencies": {
-    "dotenv": "^11.0.0"
-  }
+  "devDependencies": {}
 }
